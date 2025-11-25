@@ -32,11 +32,7 @@ def generate_staff_hospital():
             print(row["governorate"], "Here")
             for i in range(random.randint(3, 7)):
                 ID = generate_random_egyptian_id()
-                age = extract_age_from_id(ID)
-                while age < 25 and age > 70:
-                    ID = generate_random_egyptian_id()
-                    age = extract_age_from_id(ID)
-
+                age = random.randint(25, 70)
                 gender = random.choice(["Male", "Female"])
 
                 if gender == "Male":
@@ -82,10 +78,7 @@ def generate_staff_hospital():
 
         for _ in range(counter_doctors * random.randint(2, 3)):
             ID = generate_random_egyptian_id()
-            age = extract_age_from_id(ID)
-            while age < 25 and age > 70:
-                ID = generate_random_egyptian_id()
-                age = extract_age_from_id(ID)
+            age = random.randint(25, 70)
 
             gender = random.choice(["Male", "Female"])
 
@@ -131,10 +124,7 @@ def generate_staff_hospital():
         
         for _ in range(random.randint(1, 4)):
             ID = generate_random_egyptian_id()
-            age = extract_age_from_id(ID)
-            while age < 25 and age > 70:
-                ID = generate_random_egyptian_id()
-                age = extract_age_from_id(ID)
+            age = random.randint(25, 70)
 
             gender = random.choice(["Male", "Female"])
 
@@ -180,11 +170,8 @@ def generate_staff_hospital():
             
         for _ in range(random.randint(10, 15)):
             ID = generate_random_egyptian_id()
-            age = extract_age_from_id(ID)
-            while age < 25 and age > 70:
-                ID = generate_random_egyptian_id()
-                age = extract_age_from_id(ID)
-
+            age = random.randint(25, 70)
+            
             gender = random.choice(["Male", "Female"])
 
             if gender == "Male":
@@ -229,10 +216,7 @@ def generate_staff_hospital():
             
         for _ in range(random.randint(7, 12)):
             ID = generate_random_egyptian_id()
-            age = extract_age_from_id(ID)
-            while age < 25 and age > 70:
-                ID = generate_random_egyptian_id()
-                age = extract_age_from_id(ID)
+            age = random.randint(25, 70)
 
             gender = random.choice(["Male", "Female"])
 
