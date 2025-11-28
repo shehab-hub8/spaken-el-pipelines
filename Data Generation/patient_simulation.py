@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta, timezone
 import random
 import pandas as pd
+import ast
 
 from utils.random_NID import (
     generate_random_egyptian_id,
@@ -9,10 +10,15 @@ from utils.random_NID import (
     generate_random_egyptian_address,
 )
 from utils.consts.names import first_names_female, first_names_male, last_names
-from utils.consts.diagnosis_treatments import departemnet_diagnosis_treatment
 
 
 hospital_df = pd.read_csv("hospitals.csv")
+diagnosis_treatment_df = pd.read_csv("department_treatment.csv")
+medicine_df = pd.read_csv("medicine.csv")
+staff_df = pd.read_csv("staff.csv")
+merged_medicine_diagnosis = pd.merge(
+    medicine_df, diagnosis_treatment_df, on="diagnosis_id"
+)
 
 
 def corrupt_data(patient_data):
@@ -24,7 +30,7 @@ def corrupt_data(patient_data):
         patient_data["contact_number"] = str(random.randint(1000, 9999))
 
     for record in patient_data["records"]:
-        
+
         if random.random() < 0.03:
             record["diagnosis"] = ""
         if random.random() < 0.03:
@@ -53,12 +59,28 @@ def generate_patient_event():
     hospital_random = hospital_df.sample(n=1).iloc[0]
     ICU_admission = random.choice([True, False])
 
-    departement_admitted = random.choice(hospital_random["departments"])
-    diagnosis_treatment = random.choice(
-        departemnet_diagnosis_treatment[departement_admitted]
+    departement_admitted = random.choice(
+        hospital_random["departments"].apply(ast.literal_eval)
     )
-    diagnosis = diagnosis_treatment["diagnosis"]
-    treatment = random.choice(diagnosis_treatment["details"]["treatments"])
+    filtered = diagnosis_treatment_df[
+        diagnosis_treatment_df["department"] == departement_admitted
+    ]
+
+    row_dt = filtered.sample(1).iloc[0]
+
+    diagnosis = row_dt["diagnosis"]
+    treatment = random.choice(row_dt["treatments"].apply(ast.literal_eval))
+    doctors_in_hospital_department = staff_df[
+        (staff_df["role"] == "Doctor")
+        & (staff_df["hospital_id"] == hospital_random["hospital_id"])
+        & (staff_df["department"] == departement_admitted)
+    ]
+    doctor_id = doctors_in_hospital_department.sample(1).iloc[0]["id"]
+
+    medicines_available = merged_medicine_diagnosis[
+        merged_medicine_diagnosis["diagnosis"] == diagnosis
+    ]
+    medicine_taken = medicines_available.sample(1).iloc[0]["name"]
 
     patient_data = {
         "patient_id": patient_NID,
@@ -81,6 +103,8 @@ def generate_patient_event():
                 "diagnosis": diagnosis,
                 "treatment": treatment,
                 "arrival_mode": random.choice(["Walk-in", "Ambulance", "Referral"]),
+                "doctor_id": doctor_id,
+                "medicine_takem": medicine_taken,
                 "severity_level": (
                     random.choice(["High", "Critical"])
                     if ICU_admission
@@ -97,4 +121,4 @@ def generate_patient_event():
 
 # Main Function of Generation
 if __name__ == "__main__":
-    pass
+    generate_patient_event()
