@@ -108,7 +108,7 @@ The **Gold layer** data in Synapse follows a **star schema** for optimized analy
 
 ### **2. Data Simulation**
 - Developed **Python script** `patient_flow_generator.py` to stream fake patient data (departments, wait time, discharge status) to Event Hub.
-- [Producer Code](simulator/patient_flow_generator.py)
+- [Producer Code](data_generate/patient_flow_generator.py)
 
 ---
 
@@ -119,9 +119,9 @@ The **Gold layer** data in Synapse follows a **star schema** for optimized analy
 ---
 
 ### **4. Databricks Processing**
-- [**Notebook 1**](databricks-notebooks/01_bronze_rawdata.py): Reads Event Hub stream into Bronze.
-- [**Notebook 2**](databricks-notebooks/02_silver_cleandata.py): Cleans and validates schema.
-- [**Notebook 3** ](databricks-notebooks/03_gold_transform.py): Aggregates and prepares star schema tables.
+- [**Notebook 1**](spark-layers/01_bronze_rawdata.py): Reads Event Hub stream into Bronze.
+- [**Notebook 2**](spark-layers/02_silver_cleandata.py): Cleans and validates schema.
+- [**Notebook 3** ](spark-layers/03_gold_transform.py): Aggregates and prepares star schema tables.
 
 ---
 
@@ -169,5 +169,6 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 ## 📜 License
 This project is licensed under the **MIT License**.  
 Feel free to use and adapt for learning or production.
+
 
 
