@@ -119,9 +119,9 @@ The **Gold layer** data in Synapse follows a **star schema** for optimized analy
 ---
 
 ### **4. Databricks Processing**
-- [**Notebook 1**](spark-layers/01_bronze_rawdata.py): Reads Event Hub stream into Bronze.
-- [**Notebook 2**](spark-layers/02_silver_cleandata.py): Cleans and validates schema.
-- [**Notebook 3** ](spark-layers/03_gold_transform.py): Aggregates and prepares star schema tables.
+- [**Notebook 1**](spark-layers/1.0-bronze.ipynb): Reads Event Hub stream into Bronze.
+- [**Notebook 2**](spark-layers/2.0-silver.ipynb): Cleans and validates schema.
+- [**Notebook 3** ](spark-layers/3.0-gold.ipynb): Aggregates and prepares star schema tables.
 
 ---
 
@@ -169,6 +169,7 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 ## 📜 License
 This project is licensed under the **MIT License**.  
 Feel free to use and adapt for learning or production.
+
 
 
 
