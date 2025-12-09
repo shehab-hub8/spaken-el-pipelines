@@ -156,9 +156,9 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 - **Department-Level KPIs** (length of stay, Total Patients).  
 - **Interactive Filters & Slicers** for gender.
 
-<img width="1282" height="724" alt="[Screenshot 2025-08-30 155951" src="[https://github.com/user-attachments/assets/cf1f84dc-c1a5-4f07-84aa-1658abb4db16](https://github.com/shehab-hub8/spaken-el-pipelines/blob/main/Power-Bi/WhatsApp%20Image%202025-12-09%20at%2014.17.31_fe33e2fc.jpg)](https://drive.google.com/file/d/147NcoUrefVEdLw-HeiPxk30x0LnXXNyb/view?usp=sharing)" />
+<img src="https://drive.google.com/file/d/1i7t-Koi5Y5oO_Fg16zdLXtR9kb7KDYoI/view?usp=drive_link" width="800" alt="Dashboard 1">
 
-<img width="1282" height="724" alt="[Screenshot 2025-08-30 155951" src="[https://github.com/user-attachments/assets/cf1f84dc-c1a5-4f07-84aa-1658abb4db16](https://github.com/shehab-hub8/spaken-el-pipelines/blob/main/Power-Bi/WhatsApp%20Image%202025-12-09%20at%2014.17.16_f0ec42f5.jpg)](https://drive.google.com/file/d/1i7t-Koi5Y5oO_Fg16zdLXtR9kb7KDYoI/view?usp=sharing)" />
+<br> <img src="https://drive.google.com/file/d/147NcoUrefVEdLw-HeiPxk30x0LnXXNyb/view?usp=drive_link" width="800" alt="Dashboard 2">
 
 ---
 
@@ -168,11 +168,7 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 - **Business Insights:** Hospital admins can monitor **bed usage, patient flow, and department efficiency** in real time.  
 - **Portfolio Value:** Demonstrates both **Data Engineering** and **Analytics skills** in one project.  
 
----
 
-## 📜 License
-This project is licensed under the **MIT License**.  
-Feel free to use and adapt for learning or production.
 
 
 
