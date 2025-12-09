@@ -128,9 +128,9 @@ The **Gold layer** data in Synapse follows a **star schema** for optimized analy
 ### **5. Synapse SQL Pool**
 - Created **dedicated SQL Pool**.
 - Executed schema and fact/dimension creation queries from:
-  - [sqlpoolscrept](datawarehouse/sqlpoolscrept.sql)   
+  - [sqlpoolscrept](datawarehouse/SQL_pool_quries.sql)   
   - [DDL_Qureis](datawarehouse/SQL_views_DDL.sql)
-  - 
+    
 
 ---
 
@@ -167,6 +167,7 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 - **Scalable Architecture:** Easily adaptable for different hospital datasets.  
 - **Business Insights:** Hospital admins can monitor **bed usage, patient flow, and department efficiency** in real time.  
 - **Portfolio Value:** Demonstrates both **Data Engineering** and **Analytics skills** in one project.  
+
 
 
 
