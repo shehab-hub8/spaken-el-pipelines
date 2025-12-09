@@ -156,17 +156,18 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 - **Department-Level KPIs** (length of stay, Total Patients).  
 - **Interactive Filters & Slicers** for gender.
 
-<img src="https://drive.google.com/file/d/1i7t-Koi5Y5oO_Fg16zdLXtR9kb7KDYoI/view?usp=drive_link" width="800" alt="Dashboard 1">
+<img src="https://drive.google.com/uc?export=view&id=1i7t-Koi5Y5oO_Fg16zdLXtR9kb7KDYoI" width="800" alt="Dashboard 1">
 
-<br> <img src="https://drive.google.com/file/d/147NcoUrefVEdLw-HeiPxk30x0LnXXNyb/view?usp=drive_link" width="800" alt="Dashboard 2">
+<br> 
 
----
+<img src="https://drive.google.com/uc?export=view&id=147NcoUrefVEdLw-HeiPxk30x0LnXXNyb" width="800" alt="Dashboard 2">
 
 ## ✅ Key Outcomes
 - **End-to-End Pipeline:** From **real-time ingestion → transformation → warehouse → analytics**.  
 - **Scalable Architecture:** Easily adaptable for different hospital datasets.  
 - **Business Insights:** Hospital admins can monitor **bed usage, patient flow, and department efficiency** in real time.  
 - **Portfolio Value:** Demonstrates both **Data Engineering** and **Analytics skills** in one project.  
+
 
 
 
