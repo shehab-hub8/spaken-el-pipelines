@@ -156,7 +156,9 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 - **Department-Level KPIs** (length of stay, Total Patients).  
 - **Interactive Filters & Slicers** for gender.
 
-<img width="1282" height="724" alt="Screenshot 2025-08-30 155951" src="https://github.com/user-attachments/assets/cf1f84dc-c1a5-4f07-84aa-1658abb4db16" />
+<img width="1282" height="724" alt="Screenshot 2025-08-30 155951" src="[https://github.com/user-attachments/assets/cf1f84dc-c1a5-4f07-84aa-1658abb4db16](https://github.com/shehab-hub8/spaken-el-pipelines/blob/main/Power-Bi/WhatsApp%20Image%202025-12-09%20at%2014.17.31_fe33e2fc.jpg)" />
+
+<img width="1282" height="724" alt="Screenshot 2025-08-30 155951" src="[https://github.com/user-attachments/assets/cf1f84dc-c1a5-4f07-84aa-1658abb4db16](https://github.com/shehab-hub8/spaken-el-pipelines/blob/main/Power-Bi/WhatsApp%20Image%202025-12-09%20at%2014.17.16_f0ec42f5.jpg)" />
 
 ---
 
@@ -171,6 +173,7 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 ## 📜 License
 This project is licensed under the **MIT License**.  
 Feel free to use and adapt for learning or production.
+
 
 
 
