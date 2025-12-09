@@ -128,13 +128,15 @@ The **Gold layer** data in Synapse follows a **star schema** for optimized analy
 ### **5. Synapse SQL Pool**
 - Created **dedicated SQL Pool**.
 - Executed schema and fact/dimension creation queries from:
-  - [DDL_Qureis](sqlpool-quries/SQL_pool_quries.sql)
+  - [sqlpoolscrept](datawarehouse/sqlpoolscrept.sql)   
+  - [DDL_Qureis](datawarehouse/SQL_views_DDL.sql)
+  - 
 
 ---
 
 ### **6. Version Control**
 - Version control with **Git**:
-  - [Commands reference](git_commands/git_bash)
+  
 
 ---
 
@@ -169,6 +171,7 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 ## 📜 License
 This project is licensed under the **MIT License**.  
 Feel free to use and adapt for learning or production.
+
 
 
 
