@@ -162,11 +162,16 @@ The **Healthcare Patient Flow Dashboard** provides insights into:
 
 <img src="https://drive.google.com/uc?export=view&id=147NcoUrefVEdLw-HeiPxk30x0LnXXNyb" width="800" alt="Dashboard 2">
 
+<br> 
+
+<img src="[https://drive.google.com/uc?export=view&id=147NcoUrefVEdLw-HeiPxk30x0LnXXNyb](https://drive.google.com/file/d/1PD1g6e2fR0gxVI24DWZx0AV4wG3ULcGS/view?usp=drive_link)" width="800" alt="Dashboard 3">
+
 ## ✅ Key Outcomes
 - **End-to-End Pipeline:** From **real-time ingestion → transformation → warehouse → analytics**.  
 - **Scalable Architecture:** Easily adaptable for different hospital datasets.  
 - **Business Insights:** Hospital admins can monitor **bed usage, patient flow, and department efficiency** in real time.  
 - **Portfolio Value:** Demonstrates both **Data Engineering** and **Analytics skills** in one project.  
+
 
 
 
